@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "ss",
+    "b ",
+    "b "
+  ],
+  "key":
+  {
+    "s":
+    {
+      "item": "lycanthropy:silver_ingot"
+    },
+    "b":
+    {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "result":
+  {
+    "item": "lycanthropy:silver_hoe",
+    "count": 1
+  }
+}
