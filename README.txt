@@ -70,8 +70,7 @@ planned features-
       -wild packs consist of the 2 alphas and their pups, just like real wolves!
       -a wild pack will have a territory radius of 30 blocks from the den, to remove it you must kill the alphas(parents)
       -will attack the player if they come too close, regardless of alignment
-      -at some stage the player(if werewolf) can find and have a mate, with who they can have pups and thus a pack, and set up a 
-      territory to gaurd from mobs, other players, and other werewolves
+      -at some stage the player(if werewolf) can find and have a mate, with who they can have pups and thus a pack, and set up a territory to gaurd from mobs, other players, and other werewolves
       -level up your pups and mate and take them with you, or keep them home
       -capture other werebeasts and pretty much enslave them, give them jobs
       -make buildings and upgrade them, build a kingdom! become the king/queen of werebeasts! eradicate all hunters!
