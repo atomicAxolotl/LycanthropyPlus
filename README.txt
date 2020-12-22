@@ -76,3 +76,6 @@ planned features-
       -capture other werebeasts and pretty much enslave them, give them jobs
       -make buildings and upgrade them, build a kingdom! become the king/queen of werebeasts! eradicate all hunters!
       -player territory size made based on players werewolf level, up to 200 block radius from den
+      
+      
+and much more! suggestions welcome!
