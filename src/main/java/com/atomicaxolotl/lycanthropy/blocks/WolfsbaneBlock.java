@@ -1,6 +1,5 @@
 package com.atomicaxolotl.lycanthropy.blocks;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.BushBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
