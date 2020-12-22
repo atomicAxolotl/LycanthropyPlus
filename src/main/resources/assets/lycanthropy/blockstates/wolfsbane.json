@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "lycanthropy:block/wolfsbane" }
+    "": {
+      "model": "lycanthropy:block/wolfsbane"
+    }
   }
 }

@@ -59,5 +59,6 @@ public class RegistryHandler {
 
     //Block Items
     public static final RegistryObject<Item> SILVER_ORE_ITEM = ITEMS.register("silver_ore", () -> new BlockItemBase(SILVER_ORE.get()));
+    public static final RegistryObject<Item> WOLFSBANE_ITEM = ITEMS.register("wolfsbane", () -> new BlockItemBase(WOLFSBANE.get()));
 
 }

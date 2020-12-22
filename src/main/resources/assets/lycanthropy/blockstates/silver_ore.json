@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "lycanthropy:block/silver_ore" }
+    "": {
+      "model": "lycanthropy:block/silver_ore"
+    }
   }
 }

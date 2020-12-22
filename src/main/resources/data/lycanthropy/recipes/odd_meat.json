@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "lycanthropy:wolfsbane"
+    },
+    {
+      "item": "forge:meats"
+    }
+  ],
+  "result": {
+    "item": "lycanthropy:odd_meat"
+  }
+}
