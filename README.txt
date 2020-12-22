@@ -3,7 +3,7 @@ Inspired by Vampirism and HowlingMoon
 Werewolves and werebeasts for MC 1.15.2+
 ---------------------------------------
 
-   A celtic themed mod created around werebeasts, created and coded by atomicAxolotl, (name is imlususnaturae on CurseForge)
+   A celtic themed mod created around werebeasts, created and coded by atomicAxolotl,
    apologies for slow/seemingly spaztic development, im still learning and doing this alone.
    (this is my first project on GitHub, i have no idea what im doing.)
    
