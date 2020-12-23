@@ -1,53 +1,80 @@
--------------------------------------------
-Source installation information for modders
--------------------------------------------
-This code follows the Minecraft Forge installation methodology. It will apply
-some small patches to the vanilla MCP source code, giving you and it access 
-to some of the data and functions you need to build a successful mod.
+Inspired by Vampirism and HowlingMoon
+---------------------------------------
+Werewolves and werebeasts for MC 1.15.2+
+---------------------------------------
 
-Note also that the patches are built against "unrenamed" MCP source code (aka
-srgnames) - this means that you will not be able to read them directly against
-normal code.
+   A celtic themed mod created around werebeasts, created and coded by atomicAxolotl,
+   apologies for slow/seemingly spaztic development, im still learning and doing this alone.
+   (this is my first project on GitHub, i have no idea what im doing.)
+   
+      if you'd like to help/also become an author, DM me on discord: atomicAxolotl#7064
 
-Source pack installation information:
+im just barely learning myself so very little experience or none at all is welcome, as long as you're passionate and also trying to learn i'd be happy 
+for whatever help i can get!
 
-Standalone source installation
-==============================
 
-See the Forge Documentation online for more detailed instructions:
-http://mcforge.readthedocs.io/en/latest/gettingstarted/
 
-Step 1: Open your command-line and browse to the folder where you extracted the zip file.
+planned features-
 
-Step 2: You're left with a choice.
-If you prefer to use Eclipse:
-1. Run the following command: "gradlew genEclipseRuns" (./gradlew genEclipseRuns if you are on Mac/Linux)
-2. Open Eclipse, Import > Existing Gradle Project > Select Folder 
-   or run "gradlew eclipse" to generate the project.
-(Current Issue)
-4. Open Project > Run/Debug Settings > Edit runClient and runServer > Environment
-5. Edit MOD_CLASSES to show [modid]%%[Path]; 2 times rather then the generated 4.
-
-If you prefer to use IntelliJ:
-1. Open IDEA, and import project.
-2. Select your build.gradle file and have it import.
-3. Run the following command: "gradlew genIntellijRuns" (./gradlew genIntellijRuns if you are on Mac/Linux)
-4. Refresh the Gradle Project in IDEA if required.
-
-If at any point you are missing libraries in your IDE, or you've run into problems you can run "gradlew --refresh-dependencies" to refresh the local cache. "gradlew clean" to reset everything {this does not affect your code} and then start the processs again.
-
-Should it still not work, 
-Refer to #ForgeGradle on EsperNet for more information about the gradle environment.
-or the Forge Project Discord discord.gg/UvedJ9m
-
-Forge source installation
-=========================
-MinecraftForge ships with this code and installs it as part of the forge
-installation process, no further action is required on your part.
-
-LexManos' Install Video
-=======================
-https://www.youtube.com/watch?v=8VEdtQLuLO0&feature=youtu.be
-
-For more details update more often refer to the Forge Forums:
-http://www.minecraftforge.net/forum/index.php/topic,14048.0.html
+   -book
+      -for explaining various mechanics and furthering lore, gets more pages as the player progresses
+      
+   -dangerous forest
+      -a biome where lone werewolves will naturally spawn, all on neutral
+      
+   -lycanthropi
+      -a disease that will turn you into a werewolf on the next full moon, removed on death or once full moon hits.
+      
+   -various ways of contracting lycanthropi
+      -blood transfusion, werewolf bite, majykk deals...
+      
+   -werebeasts
+      -werewolves, werebears, and perhaps more (outside input welcome)
+      can inflict their own respective strain of lycanthropi on the player, with lore behind each of them
+      
+   -wolfsbane flower and potion
+      -potion used to remove all strains of lycanthropi, flower used to make the potion and various other things
+      flower prevents wolves from spawning and keeps them at a 5 block distance
+      
+   -silver armor and toolset
+      -strong armor and tool set for the eradication of werebeasts, worn by werewolf hunters
+      
+   -skilltrees
+      -one for werebeasts, and one for beast hunters
+      
+   -structures
+      -hunter huts, werewolf dens, among others...
+      
+   -irish fae
+      -special feature for somethin special ;) very much lore here
+      -fae majykk used for various things
+      -perhaps like villagers? with trade mechanics and sometimes villages in forests
+      
+   -kingdoms (neutral party)
+      -filled with unique npc villagers
+      -trade, go to shops, make friends
+      -some oddity shops often spawn in, look for them
+      -strong werewolves can recieve quests from the king
+      
+   -werewolf hunter clans/camps
+      -naturally spawning, has a leader you can talk to about becoming a hunter
+      -attacks were(beasts) on sight (unless lowlevel and human form, they cant tell then)
+      -to eliminate, kill the leader, the hunters will immediately attack
+      -the camp, in minecolonies style, can have various buildings upgraded
+      -once a hunter: player can join a clan and take quests, climb the ranks to leader, take quests, make friends with the NPC hunters, etc
+         OR
+      -once player(if hunter) is high enough hunter level, can recruit new hunters to follow or serve them and eventually make their own clan
+      -to recruit, they either have to be a good friend of yours or you pay them
+      
+   -werewolf packs, wild and player made
+      -wild packs consist of the 2 alphas and their pups, just like real wolves!
+      -a wild pack will have a territory radius of 30 blocks from the den, to remove it you must kill the alphas(parents)
+      -will attack the player if they come too close, regardless of alignment
+      -at some stage the player(if werewolf) can find and have a mate, with who they can have pups and thus a pack, and set up a territory to gaurd from mobs, other players, and other werewolves
+      -level up your pups and mate and take them with you, or keep them home
+      -capture other werebeasts and pretty much enslave them, give them jobs
+      -make buildings and upgrade them, build a kingdom! become the king/queen of werebeasts! eradicate all hunters!
+      -player territory size made based on players werewolf level, up to 200 block radius from den
+      
+      
+and much more! suggestions welcome!
