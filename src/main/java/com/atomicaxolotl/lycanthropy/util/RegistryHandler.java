@@ -4,7 +4,7 @@ import com.atomicaxolotl.lycanthropy.Lycanthropy;
 import com.atomicaxolotl.lycanthropy.armor.ModArmorMaterial;
 import com.atomicaxolotl.lycanthropy.blocks.BlockItemBase;
 import com.atomicaxolotl.lycanthropy.blocks.SilverOreBlock;
-import com.atomicaxolotl.lycanthropy.blocks.WolfsbaneBlock;
+import com.atomicaxolotl.lycanthropy.blocks.ModFlowerBlock;
 import com.atomicaxolotl.lycanthropy.items.ItemBase;
 import com.atomicaxolotl.lycanthropy.items.OddMeat;
 import com.atomicaxolotl.lycanthropy.tools.ModItemTier;
@@ -55,7 +55,7 @@ public class RegistryHandler {
 
     //Blocks
     public static final RegistryObject<Block> SILVER_ORE = BLOCKS.register("silver_ore", SilverOreBlock::new);
-    public static final RegistryObject<BushBlock> WOLFSBANE = BLOCKS.register("wolfsbane", WolfsbaneBlock::new);
+    public static final RegistryObject<BushBlock> WOLFSBANE = BLOCKS.register("wolfsbane", ModFlowerBlock::new);
 
     //Block Items
     public static final RegistryObject<Item> SILVER_ORE_ITEM = ITEMS.register("silver_ore", () -> new BlockItemBase(SILVER_ORE.get()));

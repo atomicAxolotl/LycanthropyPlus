@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "lycanthropy:block/wolfsbane"
+    "layer0": "lycanthropy:items/wolfsbane"
   }
 }

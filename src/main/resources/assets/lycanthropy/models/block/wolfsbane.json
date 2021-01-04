@@ -1,6 +1,6 @@
 {
   "parent": "block/cross",
   "textures": {
-    "cross": "lycanthropy:block/wolfsbane"
+    "cross": "lycanthropy:blocks/wolfsbane"
   }
 }
