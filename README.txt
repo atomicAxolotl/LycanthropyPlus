@@ -1,3 +1,14 @@
+IMPORTANT:
+I'll be moving this mod over to fabric, which should, as ive been told, allow me to develop faster and easier than forge. I also desire the fabric community more as it looks a tad less toxic and much larger than that of forge.
+i may keep developing this forge one if it gets enough attention, but the beast that is forge is being difficult with me.
+
+the mod may also be transitioning over to a more nordic/irish/gaelic mythology mod in the future. dragons, selkies, druids, etc. it will still be majorly based around werewolves and lycanthropy the same way ice and fire is based around dragons, but with more tidbits to give things a more mystical feeling! i'll put a link in here once its in alpha and ready for ppl to play with! just stalk this page for when its ready!
+
+
+discord server for those who are curious on what mod is doin atm: https://discord.gg/84NvtEUGz3
+
+
+
 Inspired by Vampirism and HowlingMoon
 ---------------------------------------
 Werewolves and werebeasts for MC 1.15.2+
