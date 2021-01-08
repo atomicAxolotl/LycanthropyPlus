@@ -19,8 +19,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class RegistryHandler {
 
-    public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, Lycanthropy.MOD_ID);
-    public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, Lycanthropy.MOD_ID);
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Lycanthropy.MOD_ID);
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Lycanthropy.MOD_ID);
 
     public static void init() {
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
@@ -41,7 +41,7 @@ public class RegistryHandler {
     public static final RegistryObject<ShovelItem> SILVER_SHOVEL =  ITEMS.register("silver_shovel", () ->
             new ShovelItem(ModItemTier.SILVER, 0, -3.0f, new Item.Properties().group(Lycanthropy.TAB)));
     public static final RegistryObject<HoeItem> SILVER_HOE =  ITEMS.register("silver_hoe", () ->
-            new HoeItem(ModItemTier.SILVER, -3.0f, new Item.Properties().group(Lycanthropy.TAB)));
+            new HoeItem(ModItemTier.SILVER, 1, -3.0f, new Item.Properties().group(Lycanthropy.TAB)));
 
     //Armor
     public static final RegistryObject<ArmorItem> SILVER_HELMET = ITEMS.register("silver_helmet", () ->
