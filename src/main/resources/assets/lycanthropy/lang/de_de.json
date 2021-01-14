@@ -1,0 +1,20 @@
+{
+  "itemGroup.lycanthropyTab": "Lycanthropy",
+
+  "item.lycanthropy.silver_ingot": "Silberbarren",
+  "block.lycanthropy.silver_ore":  "Silber Erz",
+  "block.lycanthropy.wolfsbane": "Wolfswurz",
+
+  "item.lycanthropy.silver_sword": "Silberschwert",
+  "item.lycanthropy.silver_pickaxe": "Silberspitzhacke",
+  "item.lycanthropy.silver_axe": "Silberaxt",
+  "item.lycanthropy.silver_shovel": "Silberschaufel",
+  "item.lycanthropy.silver_hoe": "Silberhacke",
+
+  "item.lycanthropy.silver_helmet": "Silberhelm",
+  "item.lycanthropy.silver_chestplate": "Silberharnisch",
+  "item.lycanthropy.silver_leggings": "Silberbeinschutz",
+  "item.lycanthropy.silver_boots": "Silberstiefel",
+
+  "item.lycanthropy.odd_meat": "Seltsames Fleisch"
+}
