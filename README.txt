@@ -7,7 +7,7 @@ the mod may also be transitioning over to a more nordic/irish/gaelic mythology m
 
 discord server for those who are curious on what mod is doin atm: https://discord.gg/84NvtEUGz3
 
-
+sounds from zapsplat.com
 
 Inspired by Vampirism and HowlingMoon
 ---------------------------------------

@@ -13,6 +13,7 @@ public class SilverOreBlock extends Block {
                 .sound(SoundType.STONE)
                 .harvestLevel(2)
                 .harvestTool(ToolType.PICKAXE)
+                .setRequiresTool()
 
         );
     }
