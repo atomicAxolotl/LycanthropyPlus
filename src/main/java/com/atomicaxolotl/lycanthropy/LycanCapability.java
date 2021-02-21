@@ -3,13 +3,47 @@ package com.atomicaxolotl.lycanthropy;
 import net.minecraft.entity.player.PlayerEntity;
 import org.spongepowered.asm.mixin.MixinEnvironment;
 
+import java.util.HashMap;
+
 public class LycanCapability implements ILycanCapability {
 
     private boolean moonTransformation = false;
+    private boolean isWerewolf;
+    private int infected;
+    private int model;
+    private int texture;
+    private boolean isShifted;
+    private HashMap<String, Boolean> starterTree;
+
+
+    public LycanCapability() {
+        this.infected = 0;
+        this.isWerewolf = false;
+        this.isShifted = false;
+        this.model = 0;
+        this.texture = 0;
+        this.starterTree = new HashMap<String, Boolean>() {
+            {
+                for (final LycanBasic basic : LycanList.BASIC){
+                    this.put(basic.getKey(), false);
+                }
+            }
+        };
+    }
+
+    @Override
+    public void copy(final ILycanCapability cap) {
+        this.infected = cap.getInfected();
+        this.isShifted = cap.isShifted();
+        this.isWerewolf = cap.isWerewolf();
+        this.model = cap.getModel();
+        this.texture = cap.getTexture();
+
+    }
 
     @Override
     public boolean isWerewolf() {
-        return this.isWerewolf();
+        return this.isWerewolf;
     }
 
     @Override
@@ -33,7 +67,7 @@ public class LycanCapability implements ILycanCapability {
     }
 
     @Override
-    public void setMoonTransformation(boolean state) {
+    public void setMoonTransformation(final boolean state) {
         this.moonTransformation = state;
     }
 
@@ -59,14 +93,7 @@ public class LycanCapability implements ILycanCapability {
     }
 
     @Override
-    public void copy(ILycanCapability var1) {
-
-    }
-
-    @Override
-    public void setInfected() {
-
-    }
+    public void setInfected(final int f) { this.infected = f; }
 
     @Override
     public void setTransformed(boolean var1, boolean var2, MixinEnvironment.Side var3, PlayerEntity var4) {
@@ -75,11 +102,6 @@ public class LycanCapability implements ILycanCapability {
 
     @Override
     public void setTransformedServer(boolean var1, PlayerEntity var2) {
-
-    }
-
-    @Override
-    public void tryTransform(PlayerEntity var1) {
 
     }
 
@@ -105,27 +127,12 @@ public class LycanCapability implements ILycanCapability {
 
     @Override
     public int getInfected() {
-        return 0;
-    }
-
-    @Override
-    public int getLevel() {
-        return 0;
-    }
-
-    @Override
-    public int getLevelCap() {
-        return 0;
-    }
-
-    @Override
-    public int getExp() {
-        return 0;
+        return this.infected;
     }
 
     @Override
     public int getModel() {
-        return 0;
+        return this.model;
     }
 
     @Override

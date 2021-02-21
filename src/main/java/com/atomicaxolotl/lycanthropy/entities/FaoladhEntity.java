@@ -19,18 +19,18 @@ public class FaoladhEntity<T> extends CreatureEntity implements IForgeRegistryEn
 
     @Override
     public FaoladhEntity setRegistryName(ResourceLocation name) {
-        return null;
+        return setRegistryName(ResourceLocation name);
     }
 
     @Nullable
     @Override
     public ResourceLocation getRegistryName() {
-        return null;
+        return getRegistryName();
     }
 
     @Override
     public Class<FaoladhEntity> getRegistryType() {
-        return null;
+        return getRegistryType();
     }
     @Override
     public void livingTick() {
