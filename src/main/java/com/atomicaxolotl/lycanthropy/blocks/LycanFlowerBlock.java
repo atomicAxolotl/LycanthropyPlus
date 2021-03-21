@@ -9,7 +9,7 @@ import net.minecraft.world.IBlockReader;
 
 //TODO get a render thing for this fella to fix the blacked out texture
 public class LycanFlowerBlock extends BushBlock {
-    protected static final VoxelShape SHAPE = Block.makeCuboidShape(2.0D, 0.0D, 2.0D, 14.0D, 13.0D, 14.0D);
+    protected static final VoxelShape SHAPE = Block.makeCuboidShape(5.0D, 0.0D, 5.0D, 11.0D, 10.0D, 11.0D);
 
     public LycanFlowerBlock() {
         super(Properties
@@ -20,13 +20,11 @@ public class LycanFlowerBlock extends BushBlock {
                 .sound(SoundType.PLANT)
                 .setLightLevel(value -> 5)
                 .variableOpacity()
-
         );
     }
 
     public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
         return SHAPE;
-
     }
 
     protected boolean isValidGround(BlockState state, IBlockReader worldIn, BlockPos pos) {
@@ -35,9 +33,9 @@ public class LycanFlowerBlock extends BushBlock {
 
     }
 
+
     protected boolean canSustainBush(BlockState state) {
         return true;
     }
-
 
 }

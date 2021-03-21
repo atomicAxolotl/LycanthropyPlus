@@ -1,7 +1,7 @@
 package com.atomicaxolotl.lycanthropy.world.gen;
 
 import com.atomicaxolotl.lycanthropy.Lycanthropy;
-import com.atomicaxolotl.lycanthropy.util.RegistryHandler;
+import com.atomicaxolotl.lycanthropy.setup.Registration;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.world.gen.GenerationStage;
@@ -41,7 +41,7 @@ public class WereWorld
 
         public static void init()
         {
-            SILVER_ORE_FEATURE = configure("silver_ore", Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, RegistryHandler.SILVER_ORE.get().getDefaultState(), 9)).range(35).square().func_242731_b(20));
+            SILVER_ORE_FEATURE = configure("silver_ore", Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, Registration.SILVER_ORE.get().getDefaultState(), 9)).range(35).square().func_242731_b(20));
         }
 
         private static <FC extends IFeatureConfig> ConfiguredFeature<FC, ?> configure(String id, ConfiguredFeature<FC, ?> cf)

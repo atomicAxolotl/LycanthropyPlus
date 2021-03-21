@@ -1,6 +1,6 @@
 package com.atomicaxolotl.lycanthropy.tools;
 
-import com.atomicaxolotl.lycanthropy.util.RegistryHandler;
+import com.atomicaxolotl.lycanthropy.setup.Registration;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
 
@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 public enum ModItemTier implements IItemTier {
 
     SILVER(2, 300, 7.0f, 3.0f, 16, () -> {
-        return Ingredient.fromItems(RegistryHandler.SILVER_INGOT.get());
+        return Ingredient.fromItems(Registration.SILVER_INGOT.get());
     });
 
 

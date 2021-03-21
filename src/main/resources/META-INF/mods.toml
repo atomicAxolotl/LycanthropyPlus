@@ -23,7 +23,7 @@ logoFile="examplemod.png" #optional
 
 credits="Thank you to Technovision for your mod tutorial!" #optional
 
-authors="atomicAxolotl, Domitron" #optional
+authors="atomicAxolotl" #optional
 
 description='''
 Werebeasts of all sorts.

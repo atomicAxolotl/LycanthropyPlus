@@ -1,44 +1,45 @@
 package com.atomicaxolotl.lycanthropy.client.model;
+// Made with Blockbench 3.8.2
+// Exported for Minecraft version 1.15
+// Paste this class into your mod and generate all required imports
 
-import com.atomicaxolotl.lycanthropy.entities.FaoladhEntity;
+
+import com.atomicaxolotl.lycanthropy.entities.FaoladhMobEntity;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.model.ModelRenderer;
 
+public class FaoladhModel extends EntityModel<FaoladhMobEntity> {
+	private final ModelRenderer head;
+	private final ModelRenderer ear1;
+	private final ModelRenderer ear2;
+	private final ModelRenderer snout;
+	private final ModelRenderer nosebridge;
+	private final ModelRenderer torso;
+	private final ModelRenderer body2;
+	private final ModelRenderer body1;
+	private final ModelRenderer leg;
+	private final ModelRenderer foot;
+	private final ModelRenderer shin;
+	private final ModelRenderer thigh1;
+	private final ModelRenderer leg2;
+	private final ModelRenderer foot2;
+	private final ModelRenderer shin2;
+	private final ModelRenderer thigh2;
+	private final ModelRenderer arm1;
+	private final ModelRenderer shoulder;
+	private final ModelRenderer forearm1;
+	private final ModelRenderer pawhand;
+	private final ModelRenderer arm2;
+	private final ModelRenderer shoulder2;
+	private final ModelRenderer forearm2;
+	private final ModelRenderer pawhand2;
+	private final ModelRenderer tail;
+	private final ModelRenderer tail1;
+	private final ModelRenderer tail2;
 
-public class Faoladh extends EntityModel<FaoladhEntity> {
-	public final ModelRenderer head;
-	public final ModelRenderer ear1;
-	public final ModelRenderer ear2;
-	public final ModelRenderer snout;
-	public final ModelRenderer nosebridge;
-	public final ModelRenderer torso;
-	public final ModelRenderer body2;
-	public final ModelRenderer body1;
-	public final ModelRenderer leg;
-	public final ModelRenderer foot;
-	public final ModelRenderer paw;
-	public final ModelRenderer shin;
-	public final ModelRenderer thigh1;
-	public final ModelRenderer leg2;
-	public final ModelRenderer foot2;
-	public final ModelRenderer paw2;
-	public final ModelRenderer shin2;
-	public final ModelRenderer thigh2;
-	public final ModelRenderer arm1;
-	public final ModelRenderer shoulder;
-	public final ModelRenderer forearm1;
-	public final ModelRenderer pawhand;
-	public final ModelRenderer arm2;
-	public final ModelRenderer shoulder2;
-	public final ModelRenderer forearm2;
-	public final ModelRenderer pawhand2;
-	public final ModelRenderer tail;
-	public final ModelRenderer tail1;
-	public final ModelRenderer tail2;
-
-	public Faoladh() {
+	public FaoladhModel() {
 		textureWidth = 128;
 		textureHeight = 128;
 
@@ -91,11 +92,7 @@ public class Faoladh extends EntityModel<FaoladhEntity> {
 		foot.setRotationPoint(2.3745F, 12.0F, -2.7133F);
 		leg.addChild(foot);
 		foot.setTextureOffset(22, 55).addBox(-3.5F, -7.0F, -0.5F, 2.0F, 6.0F, 2.0F, 0.0F, false);
-
-		paw = new ModelRenderer(this);
-		paw.setRotationPoint(-2.473F, -1.2577F, -0.2867F);
-		foot.addChild(paw);
-		paw.setTextureOffset(53, 36).addBox(-1.527F, -0.7423F, -0.2133F, 3.0F, 2.0F, 3.0F, 0.0F, false);
+		foot.setTextureOffset(53, 36).addBox(-4.0F, -2.0F, -0.5F, 3.0F, 2.0F, 3.0F, 0.0F, false);
 
 		shin = new ModelRenderer(this);
 		shin.setRotationPoint(0.3745F, 5.0F, -1.7133F);
@@ -118,11 +115,7 @@ public class Faoladh extends EntityModel<FaoladhEntity> {
 		foot2.setRotationPoint(-2.3745F, 12.0F, -2.7133F);
 		leg2.addChild(foot2);
 		foot2.setTextureOffset(0, 16).addBox(1.5F, -7.0F, -0.5F, 2.0F, 6.0F, 2.0F, 0.0F, false);
-
-		paw2 = new ModelRenderer(this);
-		paw2.setRotationPoint(2.473F, -1.2577F, -0.2867F);
-		foot2.addChild(paw2);
-		paw2.setTextureOffset(24, 18).addBox(-1.473F, -0.7423F, -0.2133F, 3.0F, 2.0F, 3.0F, 0.0F, false);
+		foot2.setTextureOffset(24, 18).addBox(1.0F, -2.0F, -0.5F, 3.0F, 2.0F, 3.0F, 0.0F, false);
 
 		shin2 = new ModelRenderer(this);
 		shin2.setRotationPoint(-0.3745F, 5.0F, -1.7133F);
@@ -148,16 +141,16 @@ public class Faoladh extends EntityModel<FaoladhEntity> {
 		shoulder.setTextureOffset(0, 49).addBox(-1.6993F, -3.9537F, 0.0F, 3.0F, 7.0F, 3.0F, 0.0F, false);
 
 		forearm1 = new ModelRenderer(this);
-		forearm1.setRotationPoint(2.5287F, 6.0F, -0.6851F);
+		forearm1.setRotationPoint(1.7633F, 9.0F, 1.1627F);
 		arm1.addChild(forearm1);
 		setRotationAngle(forearm1, 0.2618F, -0.0873F, 0.0F);
-		forearm1.setTextureOffset(29, 0).addBox(-2.1014F, -0.5745F, -0.6752F, 2.0F, 7.0F, 2.0F, 0.0F, false);
+		forearm1.setTextureOffset(29, 0).addBox(-1.5F, -3.9659F, -1.7412F, 2.0F, 7.0F, 2.0F, 0.0F, false);
 
 		pawhand = new ModelRenderer(this);
-		pawhand.setRotationPoint(0.3986F, 7.3915F, 0.066F);
-		forearm1.addChild(pawhand);
-		setRotationAngle(pawhand, -0.0873F, 0.1309F, 0.1309F);
-		pawhand.setTextureOffset(42, 21).addBox(-2.5F, -1.0F, -0.1627F, 2.0F, 2.0F, 1.0F, 0.0F, false);
+		pawhand.setRotationPoint(2.7633F, 13.0F, 0.1627F);
+		arm1.addChild(pawhand);
+		setRotationAngle(pawhand, -0.0873F, 0.0F, 0.1309F);
+		pawhand.setTextureOffset(42, 21).addBox(-2.5F, -1.0F, 0.5F, 2.0F, 2.0F, 1.0F, 0.0F, false);
 
 		arm2 = new ModelRenderer(this);
 		arm2.setRotationPoint(-3.0F, -1.0F, 3.0F);
@@ -171,37 +164,37 @@ public class Faoladh extends EntityModel<FaoladhEntity> {
 		shoulder2.setTextureOffset(46, 21).addBox(-1.3007F, -3.9537F, 0.0F, 3.0F, 7.0F, 3.0F, 0.0F, false);
 
 		forearm2 = new ModelRenderer(this);
-		forearm2.setRotationPoint(-2.146F, 6.0F, 0.2388F);
+		forearm2.setRotationPoint(-1.7633F, 9.0F, 1.1627F);
 		arm2.addChild(forearm2);
 		setRotationAngle(forearm2, 0.2618F, 0.0873F, 0.0F);
-		forearm2.setTextureOffset(0, 0).addBox(-0.1993F, -0.8213F, -1.5964F, 2.0F, 7.0F, 2.0F, 0.0F, false);
+		forearm2.setTextureOffset(0, 0).addBox(-0.5F, -3.9659F, -1.7412F, 2.0F, 7.0F, 2.0F, 0.0F, false);
 
 		pawhand2 = new ModelRenderer(this);
-		pawhand2.setRotationPoint(-0.6993F, 7.1446F, -0.8552F);
-		forearm2.addChild(pawhand2);
-		setRotationAngle(pawhand2, -0.0873F, -0.1309F, -0.1309F);
-		pawhand2.setTextureOffset(0, 40).addBox(0.5F, -1.0F, -0.1627F, 2.0F, 2.0F, 1.0F, 0.0F, false);
+		pawhand2.setRotationPoint(-2.7633F, 13.0F, 0.1627F);
+		arm2.addChild(pawhand2);
+		setRotationAngle(pawhand2, -0.0873F, 0.0F, -0.1309F);
+		pawhand2.setTextureOffset(0, 40).addBox(0.5F, -1.0F, 0.5F, 2.0F, 2.0F, 1.0F, 0.0F, false);
 
 		tail = new ModelRenderer(this);
-		tail.setRotationPoint(0.0F, 12.0F, -1.0F);
+		tail.setRotationPoint(0.0F, 11.0F, -4.0F);
 		
 
 		tail1 = new ModelRenderer(this);
-		tail1.setRotationPoint(0.0F, 4.2696F, -2.1134F);
+		tail1.setRotationPoint(0.0F, 5.0F, 1.0F);
 		tail.addChild(tail1);
 		setRotationAngle(tail1, -0.2618F, 0.0F, 0.0F);
 		tail1.setTextureOffset(38, 0).addBox(-1.5F, -5.0F, -0.6F, 3.0F, 8.0F, 3.0F, 0.0F, false);
 
 		tail2 = new ModelRenderer(this);
-		tail2.setRotationPoint(0.0F, 5.2696F, -2.1134F);
+		tail2.setRotationPoint(0.0F, 6.0F, 1.0F);
 		tail.addChild(tail2);
 		setRotationAngle(tail2, -0.0873F, -0.0436F, 0.0F);
 		tail2.setTextureOffset(14, 30).addBox(-1.0F, 2.0F, -0.5F, 2.0F, 4.0F, 2.0F, 0.0F, false);
 	}
 
 	@Override
-	public void setRotationAngles(FaoladhEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch){
-		//previously the render function, render code was moved to a method below
+	public void setRotationAngles(FaoladhMobEntity entityIn, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+
 	}
 
 	@Override

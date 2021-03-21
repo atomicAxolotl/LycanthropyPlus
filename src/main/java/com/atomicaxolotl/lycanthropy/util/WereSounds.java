@@ -2,6 +2,7 @@ package com.atomicaxolotl.lycanthropy.util;
 
 
 import com.atomicaxolotl.lycanthropy.Lycanthropy;
+import com.atomicaxolotl.lycanthropy.setup.ModSetup;
 import net.minecraft.util.SoundEvent;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -17,7 +18,7 @@ public class WereSounds
 
     public static RegistryObject<SoundEvent> register(String name)
     {
-        return REGISTRY.register(name, () -> new SoundEvent(Lycanthropy.rl(name)));
+        return  null;
     }
 
     public static RegistryObject<SoundEvent> entity(String name)

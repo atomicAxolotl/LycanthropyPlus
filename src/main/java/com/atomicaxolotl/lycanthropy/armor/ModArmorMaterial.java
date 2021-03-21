@@ -1,7 +1,7 @@
 package com.atomicaxolotl.lycanthropy.armor;
 
 import com.atomicaxolotl.lycanthropy.Lycanthropy;
-import com.atomicaxolotl.lycanthropy.util.RegistryHandler;
+import com.atomicaxolotl.lycanthropy.setup.Registration;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.crafting.Ingredient;
@@ -16,7 +16,7 @@ public enum ModArmorMaterial implements IArmorMaterial {
 
 
     SILVER( Lycanthropy.MOD_ID + ":silver", 25, new int[] { 2, 5, 6, 3 }, 19,
-            SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 1.0f, () -> { return Ingredient.fromItems(RegistryHandler.SILVER_INGOT.get());}, 1);
+            SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 1.0f, () -> { return Ingredient.fromItems(Registration.SILVER_INGOT.get());}, 1);
 
     private static final int [] MAX_DAMAGE_ARRAY = new int[] { 11, 16, 15, 13 };
     private final String name;

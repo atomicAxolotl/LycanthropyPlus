@@ -1,9 +1,14 @@
-package com.atomicaxolotl.lycanthropy;
+package com.atomicaxolotl.lycanthropy.capabilities;
 
+import com.atomicaxolotl.lycanthropy.LycanBasic;
+import com.atomicaxolotl.lycanthropy.LycanList;
+import com.atomicaxolotl.lycanthropy.capabilities.ILycanCapability;
 import net.minecraft.entity.player.PlayerEntity;
 import org.spongepowered.asm.mixin.MixinEnvironment;
 
 import java.util.HashMap;
+
+/* stuff for the player to determine what the player can do, not the entity! */
 
 public class LycanCapability implements ILycanCapability {
 

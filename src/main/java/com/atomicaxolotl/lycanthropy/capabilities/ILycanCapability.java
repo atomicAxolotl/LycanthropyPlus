@@ -1,4 +1,4 @@
-package com.atomicaxolotl.lycanthropy;
+package com.atomicaxolotl.lycanthropy.capabilities;
 
 import net.minecraft.entity.player.PlayerEntity;
 import org.spongepowered.asm.mixin.MixinEnvironment;
